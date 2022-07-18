@@ -1,3 +1,5 @@
+const DomSeguir = [<Seguir/>,<Seguir/>,<Seguir/>,<Seguir/>,<Seguir/>];
+
 export default function Side_bar(){
     return(
         <div class="side-bar">
@@ -7,11 +9,7 @@ export default function Side_bar(){
                 Ver tudo
             </div>
             <div class="todos-seguir">
-                <Seguir />
-                <Seguir />
-                <Seguir />
-                <Seguir />
-                <Seguir />
+            {DomSeguir.map((seg) => (seg))}
             </div>
             <Menu_Footer_Sidebar />
             <Reference_footer_sidebar />

@@ -1,24 +1,17 @@
-function props_Box(){
+function Props_Box(props){
     return(
-        <div class="top-box">
-            <div>
-                img="./img/gato-telefone"
-                alt="imagem"
-                title="meowed"
+        <div class="img-name">
+                    <img src={props.img} alt=""/>
+                    <p>{props.name}</p>
                 </div>
-            <div> img="img/polite-bunny.jpeg" alt="Iti malia" title="Iti malia" </div>
-        </div>
     )
 }
 
-export default function Box(props){
+export default function Box(){
     return(
         <div class="box-style">
             <div class="top-box"> 
-                <div class="img-name">
-                    <img src={props.img} alt=""/>
-                    <p>meowed</p>
-                </div>
+                <Props_Box img ="./img/gato-telefone 1.png" name ="Meowed" />
                                    
                 <div class="icone-top-box">
                     <ion-icon name="ellipsis-horizontal" ></ion-icon>
