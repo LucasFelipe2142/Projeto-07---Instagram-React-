@@ -1,16 +1,22 @@
 export default function Person_Stories(){
     return(
-                    <div class="person-storie-complete">
-
-                        <div class="person-storie">
-                            <img src="./img/stories_background.jpg" class="background-storie"/>
-                            <img src="./img/cruzeirao cabuloso.png" class="img-storie"/>
-                        </div>
-
-                        <div class="person-storie-name">
-                            respondeai
-                        </div>
-
-                    </div>
+        <Props_Box img = "./img/stories_background.jpg" img2 ="./img/cruzeirao cabuloso.png" name = "respondeai"/>
     );
+}
+
+function Props_Box(props){
+    return(
+        <div class="person-storie-complete">
+
+            <div class="person-storie">
+                <img src={props.img} class="background-storie"/>
+                <img src={props.img2} class="img-storie"/>
+            </div>
+
+            <div class="person-storie-name">
+                {props.name}
+            </div>
+
+        </div>
+    )
 }

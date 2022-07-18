@@ -1,5 +1,11 @@
 const DomSeguir = [<Seguir/>,<Seguir/>,<Seguir/>,<Seguir/>,<Seguir/>];
 
+function Props_Box_img(props){
+  return(
+      <img src={props.img} alt="" class={props.class}/> 
+  )
+}
+
 export default function Side_bar(){
     return(
         <div class="side-bar">
@@ -21,7 +27,7 @@ function Perfil_principal(){
     return(
         <div class="perfil-principal">
           <div class="perfilprincipal-imagem">
-            <img src="./img/mel e pingo.jpeg" class="img-perfil-principal"/>
+          <Props_Box_img img = "./img/mel e pingo.jpeg" class="img-perfil-principal"/>
           </div>
           <div class="perfil-principal-nome">
             <p>Pingo e Mel</p>
@@ -36,7 +42,7 @@ function Seguir(){
         <div class="seguir">
             <div class="perfil-seguir">
               <div class="perfil-seguir-imagem">
-                <img src="./img/mel e pingo.jpeg" class="img-perfil-seguir"/>
+                <Props_Box_img img = "./img/mel e pingo.jpeg" class="img-perfil-seguir"/>
               </div>
               <div class="perfil-seguir-nome">
                 <p>Pingo e Mel</p>
