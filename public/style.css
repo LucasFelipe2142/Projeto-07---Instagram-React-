@@ -1,142 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
+* {
     box-sizing: border-box;
 }
 
 /* defininfo cor de fundo e tamanho*/
 
-body{
+body {
     background-color: #FAFAFA;
     max-width: 614px;
 }
 
-.container{  /* engloba todo conteudo desde o top até o footer*/
+.container {
+    /* engloba todo conteudo desde o top até o footer*/
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 
-.top{
+.top {
     width: 100%;
     height: 54px;
     display: grid;
     grid-template-areas:
-    "icone-camera instgram icone-enviar";
+        "icone-camera instgram icone-enviar";
     justify-content: space-between;
     align-items: center;
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
     border-bottom: 1px solid #DBDBDB;
     z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    
-    
+
+
 }
 
-.top-935px{
+.top-935px {
     display: none;
 }
 
-.top-desktop{
+.top-desktop {
     display: none;
 }
 
 
 /* icones usados na barra topo*/
-.icone-camera{
+.icone-camera {
     font-size: 19.25px;
     margin-left: 20px;
     grid-area: "icone-camera";
 }
 
-.icone-enviar{
+.icone-enviar {
     font-size: 17.87px;
     margin-right: 20px;
     grid-area: "icone-enviar";
 }
 
-.instagram{
+.instagram {
     width: 103px;
     height: 29px;
 }
 
-.compensando-topo{  /*gera espaço pra copensar o espaço perdido ao fixar o topo*/
+.compensando-topo {
+    /*gera espaço pra copensar o espaço perdido ao fixar o topo*/
     height: 54px;
 }
 
 /* fim do topo*/
 
-.conteudo-feed{
+.conteudo-feed {
     display: grid;
     grid-area: "feed";
-    grid-template-areas: 
-    "stories"
-    "box"
-    "space"
-    "box";
+    grid-template-areas:
+        "stories"
+        "box"
+        "space"
+        "box";
 }
 
-.feed-and-side-bar{
+.feed-and-side-bar {
     display: grid;
-    grid-template-areas: 
-    "feed sidebar";
+    grid-template-areas:
+        "feed sidebar";
     justify-content: center
-    
 }
 
 /*começo stories*/
 
-.passar-pro-lado{   /*setinha posicionada nos stories*/
+.passar-pro-lado {
+    /*setinha posicionada nos stories*/
     display: none;
 }
 
-.person-storie{ /*contem a imagem e backgroun da imagem de cada storie individual*/
+.person-storie {
+    /*contem a imagem e backgroun da imagem de cada storie individual*/
     position: relative;
     align-items: center;
     top: 25%;
     grid-area: "person-img";
 }
 
-.person-storie-name{  /* contem o nome da pag de cada storie individual*/
+.person-storie-name {
+    /* contem o nome da pag de cada storie individual*/
     grid-area: "person-name";
     margin-top: 70px;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     margin-left: 3px;
-    
+
 }
 
-.person-storie-complete{ /* storie individual completo*/
+.person-storie-complete {
+    /* storie individual completo*/
     display: grid;
-    grid-template-areas: 
-    "person-img"
-    "person-name";
+    grid-template-areas:
+        "person-img"
+        "person-name";
 
     margin-right: 18px;
 }
 
-.background-storie{ 
+.background-storie {
     width: 66px;
     height: 66px;
-    
+
 
 }
 
-.img-storie{
+.img-storie {
     width: 56px;
     height: 56px;
     margin-left: 5px;
     margin-top: 5px;
-    
+
 }
 
-.every-stories{
+.every-stories {
     width: 612px;
     height: 121px;
     grid-area: "stories";
@@ -146,14 +151,14 @@ body{
     overflow: hidden;
 }
 
-.stories{ 
+.stories {
     display: flex;
     margin-left: 70px;
     position: relative;
-    
+
 }
 
-.person-storie img{
+.person-storie img {
     border-radius: 50%;
     position: absolute;
     border-radius: 50%;
@@ -162,7 +167,7 @@ body{
 /*fim  stories*/
 /* aqui começa box */
 
-.box-style{
+.box-style {
     width: 612px;
     height: 749px;
     grid-area: "box";
@@ -172,114 +177,114 @@ body{
 
     display: grid;
 
-    grid-template-areas: 
-    "top-box"
-    "imagem-box"
-    "footer-completo-box";
+    grid-template-areas:
+        "top-box"
+        "imagem-box"
+        "footer-completo-box";
 }
 
-.top-box{
-   width: 100%;
-   height: 60px; 
-   grid-area: "top-box";
-   display: flex;
-   justify-content: space-between;
-   align-items: center ;
-   
-   
+.top-box {
+    width: 100%;
+    height: 60px;
+    grid-area: "top-box";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
 }
 
-.img-name p{
+.img-name p {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
 
-.img-name{
+.img-name {
     display: flex;
     align-items: center;
     margin-left: 20px;
-    
+
 }
 
-.top-box img{
+.top-box img {
     width: 32px;
     height: 32px;
     grid-area: "imagem";
     margin-right: 15px;
     border-radius: 50%;
-    
+
 }
 
-.icone-top-box{
+.icone-top-box {
     margin-right: 20px;
 }
 
-.imagem-box{
+.imagem-box {
     grid-area: "imagem-box";
     width: 100%;
-    
+
 }
 
-.footer-completo-box{
+.footer-completo-box {
     grid-area: "footer-completo-box";
     width: 100%;
     height: 76px;
 }
 
-.footer-box{ 
+.footer-box {
     display: flex;
     justify-content: space-between;
     margin-top: 12px;
-    
- }
 
-.icon-footer{
-    font-size: 22px;
-    margin-right:10px ;
 }
 
-.direita-footer-box{
+.icon-footer {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.direita-footer-box {
     margin-right: 10px;
     font-size: 17.88px;
 }
 
-.esquerda-footer-box{
+.esquerda-footer-box {
     margin-left: 20px;
 }
 
-.footer-completo-box{
+.footer-completo-box {
     display: flex;
     flex-direction: column;
 }
 
-.bottom-footer-box{
+.bottom-footer-box {
     display: flex;
     align-items: center;
     margin-top: 6px;
 }
 
-.texto-curtidas{
+.texto-curtidas {
     margin-left: 7.5px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    
+
 
 }
 
-.img-footer-box{
+.img-footer-box {
     width: 20px;
     height: 20px;
     margin-left: 20px;
-    
+
 }
 
-.space{
+.space {
     width: 100%;
     height: 60px;
     grid-area: "space";
 }
 
-.footer{
+.footer {
     width: 612px;
     height: 54px;
     display: flex;
@@ -287,35 +292,35 @@ body{
     justify-content: space-between;
     position: fixed;
     bottom: 0;
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
     border-top: 1px solid #DBDBDB;
     z-index: 1;
 
 }
 
-.icon-footer{
+.icon-footer {
     font-size: 16px;
 }
 
-.home{
+.home {
     margin-left: 20px;
 }
 
-.outline{
+.outline {
     margin-right: 20px;
 }
 
-.compensando-footer{
+.compensando-footer {
     height: 54px;
 }
 
 /*aqui começa a side bar*/
 
-.side-bar{
+.side-bar {
     display: none;
 }
 
-#likeColor{
+#likeColor {
     color: red;
 }
 
@@ -324,30 +329,30 @@ ion-icon:hover {
 }
 
 @media only screen and (min-width: 613px) {
-    body{
+    body {
         max-width: 935px;
     }
 
-    .footer{
+    .footer {
         display: none;
     }
 
-    .compensando-footer{
+    .compensando-footer {
         display: none;
     }
 
-    .icone-enviar{
+    .icone-enviar {
         display: none;
     }
 
-    .container{
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+
     }
 
-    .every-stories{
+    .every-stories {
         background-color: #ffffff;
         margin-top: 34px;
         margin-bottom: 24px;
@@ -356,11 +361,11 @@ ion-icon:hover {
         border: 1px solid #DBDBDB;
     }
 
-    .box-style{
+    .box-style {
         border: 1px solid #DBDBDB;
     }
 
-    .passar-pro-lado{
+    .passar-pro-lado {
         display: unset;
         position: absolute;
         right: 60px;
@@ -369,43 +374,43 @@ ion-icon:hover {
         font-size: 30px;
     }
 
-    .passar-lado{
+    .passar-lado {
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
-    .top{
+    .top {
         display: none;
     }
 
-    .top-935px{
+    .top-935px {
         width: 100%;
         height: 54px;
         display: grid;
         grid-template-areas:
-        "esquerda-top-935px center-top-935px direita-topo-935px";
+            "esquerda-top-935px center-top-935px direita-topo-935px";
         justify-content: space-between;
         align-items: center;
-        background-color:#FFFFFF;
+        background-color: #FFFFFF;
         border-bottom: 1px solid #DBDBDB;
         z-index: 1;
         position: fixed;
-        top: 0; 
+        top: 0;
     }
 
-    .esquerda-top-935px{
+    .esquerda-top-935px {
         grid-area: "esquerda-top-935px";
         display: flex;
         align-items: center;
     }
 
-    .border-center-esq-top-935{
+    .border-center-esq-top-935 {
         height: 22px;
         border-left: 1px solid #DBDBDB;
         margin-left: 10px;
         margin-right: 10px;
     }
-    
-    .center-top-935px{
+
+    .center-top-935px {
         grid-area: "center-top-935px";
         width: 215px;
         height: 28px;
@@ -422,18 +427,18 @@ ion-icon:hover {
         outline: none;
     }
 
-    .icon-935{
+    .icon-935 {
         font-size: 19px;
         margin-left: 25px;
     }
 
-    .direita-topo-935px{
+    .direita-topo-935px {
         margin-right: 18px;
         display: flex;
         align-items: center;
     }
 
-    
+
 }
 
 
@@ -442,19 +447,19 @@ ion-icon:hover {
 
 
 @media only screen and (min-width: 936px) {
-    body{
+    body {
         max-width: 100%;
     }
 
-    .top-935px{
+    .top-935px {
         display: none;
     }
 
-    .top-desktop{
+    .top-desktop {
         display: unset;
     }
 
-    .side-bar{
+    .side-bar {
         display: unset;
         margin-top: 34px;
         width: 293px;
@@ -463,18 +468,18 @@ ion-icon:hover {
         padding-top: 22px;
     }
 
-    .perfil-principal{
+    .perfil-principal {
         display: flex;
         align-items: center;
     }
 
-    .img-perfil-principal{
+    .img-perfil-principal {
         width: 56px;
         height: 56px;
         border-radius: 50%;
     }
 
-    .perfil-principal-nome{
+    .perfil-principal-nome {
         font-size: 14px;
         font-family: 'Roboto', sans-serif;
         color: #8E8E8E;
@@ -482,13 +487,13 @@ ion-icon:hover {
         margin-left: 17px;
     }
 
-    .perfil-principal-nome p{
+    .perfil-principal-nome p {
         color: black;
         font-weight: 500;
         margin-bottom: 4px;
     }
 
-    .sugestoes-seguir{
+    .sugestoes-seguir {
         display: flex;
         width: 100%;
         font-size: 12px;
@@ -499,42 +504,42 @@ ion-icon:hover {
         margin-top: 24px;
     }
 
-    .sugestoes-seguir p{
+    .sugestoes-seguir p {
         color: #8E8E8E;
     }
 
-    .todos-seguir{
+    .todos-seguir {
         display: flex;
         flex-direction: column;
     }
 
-    .seguir{
+    .seguir {
         margin-top: 17px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .seguir-azul{
+    .seguir-azul {
         color: #139EF2;
         font-size: 12px;
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
     }
 
-    .perfil-seguir{
+    .perfil-seguir {
         display: flex;
         width: 100%;
         align-items: center;
     }
 
-    .img-perfil-seguir{
+    .img-perfil-seguir {
         width: 32px;
         height: 32px;
         border-radius: 50%;
     }
 
-    .perfil-seguir-nome{
+    .perfil-seguir-nome {
         font-family: 'Roboto', sans-serif;
         margin-left: 11px;
         font-size: 12px;
@@ -542,14 +547,14 @@ ion-icon:hover {
         font-weight: 400;
     }
 
-    .perfil-seguir-nome p{
+    .perfil-seguir-nome p {
         font-size: 14px;
         color: black;
         font-weight: 500;
         margin-bottom: 6px;
     }
 
-    .menu-footer-sidebar{
+    .menu-footer-sidebar {
         width: 100%;
         font-family: 'Roboto', sans-serif;
         font-size: 11px;
@@ -558,7 +563,7 @@ ion-icon:hover {
         margin-top: 33px;
     }
 
-    .reference-footer-sidebar{
+    .reference-footer-sidebar {
         width: 100%;
         font-family: 'Roboto', sans-serif;
         font-size: 11px;
@@ -567,10 +572,10 @@ ion-icon:hover {
         margin-top: 18px;
     }
 
-    .top-desktop{
+    .top-desktop {
         width: 100%;
         height: 54px;
-        background-color:#FFFFFF;
+        background-color: #FFFFFF;
         border-bottom: 1px solid #DBDBDB;
         z-index: 1;
         position: fixed;
@@ -580,24 +585,24 @@ ion-icon:hover {
         align-items: center;
     }
 
-    .top-desktop-align{
+    .top-desktop-align {
         width: 907px;
         display: grid;
         grid-template-areas:
-        "esquerda-top-935px center-top-935px direita-topo-935px";
+            "esquerda-top-935px center-top-935px direita-topo-935px";
         justify-content: space-between;
         align-items: center;
     }
 
-    .icon-935{
+    .icon-935 {
         margin-left: 25px;
     }
 
-    .direita-topo-935px{
+    .direita-topo-935px {
         margin-right: 8px;
     }
 
-    .icone-camera{
+    .icone-camera {
         margin-left: 0;
     }
 }

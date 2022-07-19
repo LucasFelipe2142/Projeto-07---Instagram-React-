@@ -1,9 +1,9 @@
 import ConteudoFeed from "./ConteudoFeed"
 import Side_bar from "./Sidebar"
 
-export default function FeedSidebar(){
+export default function FeedSidebar() {
 
-    return(
+    return (
         <div class="feed-and-side-bar">
             <ConteudoFeed />
             <Side_bar />
